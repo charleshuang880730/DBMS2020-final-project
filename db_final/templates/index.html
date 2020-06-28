@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+	<div class="big">
+	<div class="form">
+		<h2>查詢課程專區</h2>
+		<form action="/query" method="post">
+			<label for="C_NAME">關鍵字查詢</label>
+			<p><input type="text" id="C_NAME" name="input1"></p>
+			
+			<label for="Department">開課單位</label>
+			<select name="d_selector" id="Department">
+				<option name="d_selector" value="0">N/A</option>
+				<option name="d_selector" value="1">資訊科學系</option>
+				<option name="d_selector" value="2">應數系</option>
+				<option name="d_selector" value="3">心理學系</option>
+			</select>
+			<p><input type="submit" value="查詢"></p> 
+		</form>
+	</div>
+
+	<div class="form">
+		<h2>選課專區</h2>
+		<form action="/class" method="post">
+			<label for="S_NO">學號</label>
+			<input type="text" id="S_NO" name="input2">
+
+			<label for="C_NO">課程代碼</label>
+			<input type="text" id="C_NO" name="input3">
+
+			<label for="Operation">選課或退課</label>
+			<input type="radio" name="operation" id="Operation" value="0">加選
+			<input type="radio" name="operation" value="1">退選
+			<input type="radio" name="operation" value="2" checked="true">查詢選課
+			<p><input type="submit" value="送出"></p>
+		</form>
+	</div>
+	</div>	
+
+{% endblock %}
+

@@ -1,0 +1,71 @@
+body {
+	background-color: rgba(224, 224, 224, 0.5);
+	height: 100%;
+}
+
+header {
+	text-align: center;
+	margin-left: 30px;
+	font-size: 50px;
+	font-family: Arial, sans-serif;
+	background-color: rgba(0, 0, 0, 10);
+	
+}	
+
+h1 {
+	font-weight: bold;
+	color: #F5F5F5;
+}
+
+div.form {
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+	margin: 50px auto;
+	text-align: center;
+	display: inline;
+	float: left;
+	width: 50%;
+}
+
+label {
+	display: block;
+}
+
+input {
+	display: inline-block;
+	border: 1px solid #555;	
+}
+
+input:focus {
+	background-color: #ebf6f9;
+}
+
+fieldset { 
+	border: 1px dotted;
+}
+
+p {
+	margin-top: 25px;
+}
+
+.ff {
+	font-size: 35px;
+	text-align: center;
+}
+
+
+h2 {
+	font-weight: bold;
+	background: rgb(90, 90, 90);
+	text-shadow: 2px 2px 3px rgba(250, 245, 245, 0.9);
+	color: rgba(10,10,10,0.6);
+	position: relative;
+	z-index: 1;
+}
+
+table {
+	margin-left: 15px 15px;
+	width: 90%;
+}
+
+

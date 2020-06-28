@@ -1,0 +1,53 @@
+{% extends  "base.html" %}
+
+{% block page_content %}
+	<div class="page-header">
+		<form action='/back' method="get">
+			<input type="submit" value="回到首頁">
+		</form>
+	</div>
+
+
+	{% if result %}
+		{% if user %}
+		<p class="ff"> Student name: {{user.0}} </p>
+		{% endif %}
+		<table class="table" style="width:100%;">
+			<tbody>
+			{% if mesg %}
+			<tr>
+				<th>課程名稱</th>
+				<th>課程代碼</th>
+				<th>教師</th>
+				<th>必選修</th>
+				<th>學分數</th>
+				<th>上課地點</th>
+				<th>上課時間</th>
+			</tr>
+			{% else %}
+			<tr>
+				<th>學號</th>
+				<th>課程名稱</th>
+				<th>課程代碼</th>
+				<th>學分數</th>
+				<th>上課時間</th>
+				<th>上課地點</th>
+				<th>系名</th>
+				<th>教師</th>
+			</tr>
+			{% endif %}
+
+			{% for record in result %}
+			<tr>
+				{% for attribute in record %}
+				<td> {{ attribute }} </td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+			</tbody>
+		</table>
+	{% elif mesg %}
+		<p> {{ user.0 }} </p>
+		<p class="ff"> {{ mesg }} </p>
+	{% endif %}
+{% endblock %}
