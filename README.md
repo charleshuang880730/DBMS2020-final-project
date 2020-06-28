@@ -1,6 +1,6 @@
 # DBMS2020-final-project
 
-## Execute Environment on python venv module, 
+## Execute Environment on python venv module 
 >>1.  $(pwd):python -m venv your_virtual_environment
 >>2.  $(pwd):source ./venv/bin/activate   
 >>3.  $(pwd):pip install flask flask-bootstrap
@@ -16,3 +16,5 @@
 >>2. 選課:以學生學號和課程代碼加入選課清單
 >>3. 退課:跟選課類似,選課退課都只接受以在學生資料表裡的成員.
 >>4. 查詢已選上紀錄.
+
+>># 主要網頁界面: 首頁與查詢結果
