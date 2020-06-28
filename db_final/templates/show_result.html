@@ -47,7 +47,9 @@
 			</tbody>
 		</table>
 	{% elif mesg %}
-		<p> {{ user.0 }} </p>
+		{% if user %}
+		<p class="ff"> Student name:{{ user.0 }} </p>
+		{% endif %}
 		<p class="ff"> {{ mesg }} </p>
 	{% endif %}
 {% endblock %}
