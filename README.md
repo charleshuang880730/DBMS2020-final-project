@@ -1,11 +1,11 @@
-# DBMS2020-final-project
+S2020-final-project
 
 ## Execute Virtual Environment on python venv module 
     python -m venv your_virtual_environment
     source ./venv/bin/activate   
     pip install flask flask-bootstrap
     python app.py  
-## stop Virtual Environmnet
+## Halt Virtual Environmnet
     deactivate  
     
 ## 期末資料庫專題
