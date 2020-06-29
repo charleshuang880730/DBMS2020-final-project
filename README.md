@@ -1,10 +1,13 @@
 # DBMS2020-final-project
 
-## Execute Environment on python venv module 
+## Execute Virtual Environment on python venv module 
     python -m venv your_virtual_environment
     source ./venv/bin/activate   
     pip install flask flask-bootstrap
     python app.py  
+## stop Virtual Environmnet
+    deactivate  
+    
 ## 期末資料庫專題
 
 >>* 我們這組作的主題是 選課系統前端合簡易查詢選課系統
