@@ -1,4 +1,4 @@
-S2020-final-project
+DBMSS2020-final-project
 
 ## Execute Virtual Environment on python venv module 
     python -m venv your_virtual_environment
